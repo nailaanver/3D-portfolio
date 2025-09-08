@@ -2,6 +2,7 @@ import HTMLFlipBook from 'react-pageflip';
 import Page from './Page';
 import Cover from './Pages/Cover/Cover';
 import coverImg from "../assets/cover.png"
+import EndImg from "../assets/last-page.png"
 import FirstPage from './Pages/Hero/FirstPage';
 import Skill from './Pages/Skills/Skill';
 import Services from './Pages/Services/Services';
@@ -23,7 +24,7 @@ const ProjectData = [
   {
     name: "Change Theme",
     description: " Compleate Responsive websiteusing Javascript DOM",
-    image: ProjectImg1,
+    image: ProjectImg2,
     previewLink: "https://theme-change-iota.vercel.app/",
   }
 ];
@@ -31,19 +32,19 @@ const ProjectData2 = [
   {
     name: "Ecommerce website",
     description: " Compleate Responsive websiteusing React js and  CSS",
-    image: ProjectImg1,
+    image: ProjectImg3,
     previewLink: "https://e-commerce-app-three-ecru.vercel.app/",
   },
   {
     name: "Change Theme",
     description: " Compleate Responsive websiteusing Javascript DOM",
-    image: ProjectImg1,
+    image: ProjectImg4,
     previewLink: "https://theme-change-iota.vercel.app/",
   }
 ]
-function MyBook(props) {
+function MyBook() {
   return (
-    <HTMLFlipBook width={600} height={700} showCover="true">
+    <HTMLFlipBook width={580} height={680} showCover="true">
       <Page number={1}>
         <Cover coverImg={coverImg} title="My Portfolio" />
       </Page>
@@ -60,11 +61,15 @@ function MyBook(props) {
         <About />
       </Page>
       <Page number={6}>
-        <Projects projectData={ProjectData}/>
+        <Projects ProjectData={ProjectData}/>
       </Page>
       <Page number={7}>
-        <Projects projectData={ProjectData2}/>
+        <Projects ProjectData={ProjectData2}/>
       </Page>
+      <Page number={8}>
+        <Cover coverImg={EndImg} title="Thank You" />
+      </Page>
+      
 
     </HTMLFlipBook>
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesBox from './ServicesBox'
+import ServicesBox from "./ServicesBox";
 
 const Services = () => {
   return (
