@@ -10,7 +10,7 @@ const FirstPage = () => {
                 {/* image-container */}
                 <div >
                     <img src={personImg} alt='' className='w-
-                    [300px] h-[300px] mx-auto'/>
+                    [300px] h-[230px] mx-auto'/>
                 </div>
                 {/* text-container */}
                 <div>

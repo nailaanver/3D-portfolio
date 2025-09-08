@@ -44,7 +44,7 @@ const ProjectData2 = [
 ]
 function MyBook() {
   return (
-    <HTMLFlipBook width={580} height={680} showCover="true">
+    <HTMLFlipBook width={550} height={650} showCover="true">
       <Page number={1}>
         <Cover coverImg={coverImg} title="My Portfolio" />
       </Page>
